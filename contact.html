@@ -103,7 +103,7 @@
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
                 <i class="bi bi-telephone flex-shrink-0"></i>
                 <div>
-                  <h3>Call Us</h3>
+                  <h3>Call Me</h3>
                   <p>079 636 1071</p>
                 </div>
               </div><!-- End Info Item -->
@@ -111,7 +111,7 @@
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
                 <i class="bi bi-envelope flex-shrink-0"></i>
                 <div>
-                  <h3>Email Us</h3>
+                  <h3>Email Me</h3>
                   <p>neomwambi@icloud.com</p>
                 </div>
               </div><!-- End Info Item -->
@@ -121,9 +121,16 @@
           </div>
 
           <div class="col-lg-7">
-            <!-- TO ACTIVATE: Sign up free at formspree.io → New Form → copy Form ID
-                 → replace YOUR_FORM_ID above. Free tier = 50 submissions/month. -->
-            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" data-aos="fade-up" data-aos-delay="200">
+            <!-- FormSubmit: submissions go to neomwambii@gmail.com. FIRST TIME: check that inbox for
+                 "Activate Form" — click the link once. After redeploy/domain change, update _next below. -->
+            <form action="https://formsubmit.co/neomwambii@gmail.com" method="POST" data-aos="fade-up" data-aos-delay="200">
+              <input type="hidden" name="_subject" value="Portfolio contact form — Neo Mwambi">
+              <!-- Full URL required. Change if you use a custom domain or test on localhost -->
+              <input type="hidden" name="_next" value="https://neomwambi.github.io/My-Portfolio/contact.html">
+              <!-- Reply-To in your mail client will use the visitor's email (field name=&quot;email&quot;) -->
+
+              <!-- No _honey honeypot: hidden text fields sometimes get autofilled → FormSubmit drops the submission silently. -->
+
               <div class="row gy-4">
 
                 <div class="col-md-6">
@@ -147,11 +154,8 @@
                 </div>
 
                 <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
                   <button type="submit">Send Message</button>
+                  <p class="small text-muted mt-3 mb-0">You may complete a quick spam check; then you’ll return here.</p>
                 </div>
 
               </div>
