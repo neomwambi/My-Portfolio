@@ -30,7 +30,7 @@ Then visit `http://localhost:8080` (or the port your tool prints).
 
 ## Configuration
 
-- **Contact form:** Uses [FormSubmit](https://formsubmit.co/). Submissions go to the email in the form `action`. The first time someone uses the form, check that inbox for FormSubmit’s activation link. If your site URL changes, update the `_next` hidden field in `contact.html` to your live `contact.html` URL (must be `https://`).
+- **Contact form:** Uses [FormSubmit](https://formsubmit.co/). Submissions go to the email in the form `action`. The first time someone uses the form, check that inbox for FormSubmit’s activation link. Update the `_next` hidden field in `contact.html` to your live site URL after submit (currently the Vercel homepage; must be a full `https://` URL).
 - **Resume download:** Place your PDF next to the HTML files as `Neo_Mwambi_Resume.pdf`, or update the link in the nav “Download CV” item on each page.
 
 ## Structure

@@ -122,11 +122,11 @@
 
           <div class="col-lg-7">
             <!-- FormSubmit: submissions go to neomwambii@gmail.com. FIRST TIME: check that inbox for
-                 "Activate Form" — click the link once. After redeploy/domain change, update _next below. -->
+                 "Activate Form" — click the link once. Change _next below if your production domain changes. -->
             <form action="https://formsubmit.co/neomwambii@gmail.com" method="POST" data-aos="fade-up" data-aos-delay="200">
               <input type="hidden" name="_subject" value="Portfolio contact form — Neo Mwambi">
-              <!-- _next must match your real GitHub Pages URL: hyphen in repo name (My-Portfolio), NEVER a space (My Portfolio) -->
-              <input type="hidden" name="_next" value="https://neomwambi.github.io/My-Portfolio/contact.html">
+              <!-- FormSubmit redirects here after CAPTCHA — use your production site root -->
+              <input type="hidden" name="_next" value="https://myportfolio-nine-pearl-83.vercel.app/">
               <!-- Reply-To in your mail client will use the visitor's email (field name=&quot;email&quot;) -->
 
               <!-- No _honey honeypot: hidden text fields sometimes get autofilled → FormSubmit drops the submission silently. -->
